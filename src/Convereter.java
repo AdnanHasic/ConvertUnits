@@ -9,6 +9,7 @@ public class Convereter {
 		FormsForCalculating form = new FormsForCalculating();
 		
 		form.kilogramsToLbs();
+		form.lbsToKilograms();
 		
 
 	}

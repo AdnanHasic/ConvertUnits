@@ -21,5 +21,15 @@ public class FormsForCalculating {
 		
 	}
     
-	
+	public void lbsToKilograms () {
+		
+		System.out.println("Enter the weight in pounds : ");
+		
+		double pounds = Convereter.unos.nextDouble();
+		
+		this.result = pounds / 2.2046;
+		
+		System.out.println("lbs " + pounds + " to " + " kilograms = " + result);
+		
+	}
 }
