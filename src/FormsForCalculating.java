@@ -32,4 +32,15 @@ public class FormsForCalculating {
 		System.out.println("lbs " + pounds + " to " + " kilograms = " + result);
 		
 	}
+	
+	public void centimetersToInches () {
+		
+		System.out.println("Enter the length in centimeters : ");
+		
+		double centimeters = Convereter.unos.nextDouble();
+		
+		this.result = centimeters * 0.39370;
+		
+		System.out.println("cm " + centimeters + " to inches " + result);
+	}
 }
