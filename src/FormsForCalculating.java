@@ -15,7 +15,7 @@ public class FormsForCalculating {
 
 		this.result = kilograms * 2.2046;
 
-		System.out.println("kg " + kilograms + " to " + "lbs = " + result);
+		System.out.println("kg : " + kilograms + " to " + "lbs = " + result);
 
 	}
 
@@ -27,7 +27,7 @@ public class FormsForCalculating {
 
 		this.result = pounds / 2.2046;
 
-		System.out.println("lbs " + pounds + " to " + " kilograms = " + result);
+		System.out.println("lbs : " + pounds + " to " + " kilograms = " + result);
 
 	}
 
@@ -39,7 +39,7 @@ public class FormsForCalculating {
 
 		this.result = centimeters * 0.39370;
 
-		System.out.println("cm " + centimeters + " to inches = " + result);
+		System.out.println("cm : " + centimeters + " to inches = " + result);
 	}
 
 	public void inchesToCentimeters() {
@@ -50,7 +50,19 @@ public class FormsForCalculating {
 
 		this.result = inches / 0.39370;
 
-		System.out.println("inches " + inches + " to centimeters = " + result);
+		System.out.println("inches : " + inches + " to centimeters = " + result);
 
 	}
+
+	public void celsiusToFahrenheit() {
+
+		System.out.println("Enter the temperature in celsius : ");
+
+		double celsius = Convereter.unos.nextDouble();
+
+		this.result = (celsius * 1.8) + 32;
+
+		System.out.println("celsius : " + celsius + " to fahrenheit = " + result);
+	}
+
 }

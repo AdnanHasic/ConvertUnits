@@ -11,6 +11,7 @@ public class Convereter {
 		form.kilogramsToLbs();
 		form.lbsToKilograms();
 		form.centimetersToInches();
+		form.celsiusToFahrenheit();
 
 	}
 
