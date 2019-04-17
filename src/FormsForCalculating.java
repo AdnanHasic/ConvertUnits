@@ -56,13 +56,61 @@ public class FormsForCalculating {
 
 	public void celsiusToFahrenheit() {
 
-		System.out.println("Enter the temperature in celsius : ");
+		System.out.println("Enter the temperature in Celsius : ");
 
 		double celsius = Convereter.unos.nextDouble();
 
 		this.result = (celsius * 1.8) + 32;
 
 		System.out.println("celsius : " + celsius + " to fahrenheit = " + result);
+	}
+
+	public void fahrenheitToCelsius() {
+
+		System.out.println("Enter the temperature in Fahrenheit : ");
+
+		double fahrenheit = Convereter.unos.nextDouble();
+
+		this.result = (fahrenheit - 32) / 1.8;
+
+		System.out.println("fahrenheit : " + fahrenheit + " to celsius = " + result);
+	}
+
+	public void choiceConverter() {
+
+		System.out.println("Select the number to convert the units : " + "\n1. kilograms to lbs "
+				+ "\n2. lbs to kilograms " + "\n3. centimeters to inches " + "\n4. inches to centimeters "
+				+ "\n5. celsius to fahrenheit " + "\n6. fahrenheit to celsius ");
+
+		int number = Convereter.unos.nextInt();
+
+		switch (number) {
+		case 1:
+			kilogramsToLbs();
+			break;
+
+		case 2:
+			lbsToKilograms();
+			break;
+
+		case 3:
+			centimetersToInches();
+			break;
+
+		case 4:
+			inchesToCentimeters();
+			break;
+
+		case 5:
+			celsiusToFahrenheit();
+			break;
+
+		case 6:
+			fahrenheitToCelsius();
+			break;
+		}
+
+		Convereter.unos.close();
 	}
 
 }
